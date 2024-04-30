@@ -1,16 +1,16 @@
-import { Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuItem, NavbarMenuToggle } from '@nextui-org/react'
+import { Button, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle, link } from '@nextui-org/react'
 import React, { useState } from 'react'
 
 
 export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     let menuItems = [
-        "Home",
-        "Work",
-        "Services",
-        "About us",
-        "Blog",
-        "Contact Us"
+        { name: "Home", link: "/" },
+        { name: "Work", link: "/work" },
+        { name: "Services", link: "/services" },
+        { name: "About Us", link: "/about" },
+        { name: "Blog", link: "/blog" },
+        { name: "Contact Us", link: "/contact" }
 
     ]
     return (
@@ -18,12 +18,12 @@ export default function Nav() {
             <NavbarContent>
                 <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className='sm:hidden' />
                 <NavbarBrand>
-                    <p className="font-bold text-inherit hover:">WebSolution</p>
+                    <p className="font-bold text-cyan-950 hover:text-cyan-400	">WebSolution</p>
                 </NavbarBrand>
             </NavbarContent>
-            <NavbarContent className='hidden sm:flex gap-4 justify-end'>
+            <NavbarContent className='hidden sm:flex gap-5 justify-end'>
                 <NavbarItem>
-                    <Link href="/">Home</Link>
+                    <Link href="/" >Home</Link>
                 </NavbarItem>
                 <NavbarItem>
                     <Link href="/work">Work</Link>
@@ -32,13 +32,29 @@ export default function Nav() {
                     <Link href="/services">Services</Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link href="/about">About-us</Link>
+                    <Link href="/about">About Us</Link>
                 </NavbarItem>
                 <NavbarItem>
                     <Link href="/blog">Blog</Link>
                 </NavbarItem>
-
+                <NavbarItem>
+                    <Button as={Link} color='primary' href="/contact">Contact</Button>
+                </NavbarItem>
             </NavbarContent>
+            <NavbarMenu>
+                {menuItems.map((item, index) => (
+                    <NavbarMenuItem key={`${item}-${index}`}>
+                        <Link
+                            className="w-1/3"
+
+                            href={item.link}
+                            size="lg"
+                        >
+                            {item.name}
+                        </Link>
+                    </NavbarMenuItem>
+                ))}
+            </NavbarMenu>
         </Navbar>
     )
 

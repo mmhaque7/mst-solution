@@ -7,7 +7,9 @@ import Nav from './components/Nav'
 import Home from './components/Home'
 import Work from './components/Work'
 import Services from './components/Services'
-
+import About from './components/About'
+import Blog from './components/Blog'
+import Contact from './components/Contact'
 
 
 function App() {
@@ -21,6 +23,9 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/work' element={<Work />} />
         <Route path="/services" element={<Services />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </NextUIProvider>
 
