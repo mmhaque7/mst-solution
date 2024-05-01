@@ -1,5 +1,6 @@
-import { Button, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle, link } from '@nextui-org/react'
+import { Button, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from '@nextui-org/react'
 import React, { useState } from 'react'
+import WebLogo from './WebLogo';
 
 
 export default function Nav() {
@@ -18,6 +19,7 @@ export default function Nav() {
             <NavbarContent>
                 <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className='sm:hidden' />
                 <NavbarBrand>
+                    <WebLogo />
                     <p className="font-bold text-cyan-950 hover:text-cyan-400	">WebSolution</p>
                 </NavbarBrand>
             </NavbarContent>
