@@ -15,12 +15,11 @@ export default function Nav() {
 
     ]
     return (
-        <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
-            <NavbarContent>
+        <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen} className='h-[7rem]'>
+            <NavbarContent className='mr-[15rem]'>
                 <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className='sm:hidden' />
-                <NavbarBrand>
-                    <WebLogo />
-                    <p className="font-bold text-cyan-950 hover:text-cyan-400	">WebSolution</p>
+                <NavbarBrand className='flex justify-start'>
+                    <Link href='/'><WebLogo /></Link>
                 </NavbarBrand>
             </NavbarContent>
             <NavbarContent className='hidden sm:flex gap-5 justify-end'>
@@ -57,7 +56,7 @@ export default function Nav() {
                     </NavbarMenuItem>
                 ))}
             </NavbarMenu>
-        </Navbar>
+        </Navbar >
     )
 
 }
