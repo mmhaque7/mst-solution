@@ -11,7 +11,11 @@ export default {
   ],
   theme: {
 
-    extend: {},
+    extend: {
+      fontFamily: {
+        'lato': ['"Lato"',]
+      }
+    },
   },
   darkMode: "class",
   plugins: [nextui()]
