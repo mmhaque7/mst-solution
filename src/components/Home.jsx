@@ -5,6 +5,7 @@ const Home = () => {
     return (
         <Fragment>
             <Hero />
+            <hr></hr>
             <div className="">
                 <div className="">
                     <span className='text-xl'>Smart Digital Solutions:</span>

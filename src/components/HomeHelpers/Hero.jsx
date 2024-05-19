@@ -12,21 +12,21 @@ function Hero() {
   }, []);
   return (
     <Fragment>
-      <div className="w-full min-h-min h-[65svh] sm:h-[50svh] md:h-[75vh] mb-20 md:mb-0">
+      <div className="w-full h-[30svh] sm:h-[50svh] md:h-[75vh] mb-20 md:mb-0">
         <video
           src={myVideo}
           autoPlay
           loop
           muted
-          className="object-none hidden md:block  md:w-full md:h-[75svh] opacity-85"
+          className="object-none hidden md:block  md:w-full md:h-full opacity-85"
         />
-        <div className=" absolute w-full  h-full md:h-full   top-0 flex flex-col items-start justify-center text-red-400">
-          <h1 className="text-4xl sm:text-2xl  pl-5 pb-8 font-bold font-lato">
+        <div className=" absolute w-full  top-[10svh] h-full md:h-full flex flex-col flex-wrap ellipsis-p text-pretty items-start justify-start md:justify-center text-red-400">
+          <h1 className="text-xl sm:text-4xl pl-5 pb-5 font-bold font-lato text-pretty">
             <span data-aos="fade-up" data-aos-delay="750">
               Digital Mastery <span className="md:no-underline underline decoration-indigo-500 ">Unleashed.</span>
             </span>
           </h1>
-          <p className="text-3xl sm:text-2xl  sm:flex flex-wrap ellipsis-p text-pretty sm:text-pretty font-lato pl-5 font-extralight whitespace-pre-line md:w-1/2">
+          <p className="text-xl sm:text-2xl  sm:flex flex-wrap ellipsis-p text-pretty sm:text-pretty font-lato pl-5 font-extralight whitespace-pre-line md:w-1/2">
             <span data-aos="fade-up" data-aos-delay="800">
               Embark on a journey of digital empowerment with us.
             </span>
