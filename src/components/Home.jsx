@@ -5,7 +5,9 @@ const Home = () => {
     return (
         <Fragment>
             <Hero />
-            <hr></hr>
+            <div class="my-8 flex justify-center">
+                <hr class="w-1/2 border-t-4 border-purple-600 rounded-lg shadow-lg" />
+            </div>
             <div className="">
                 <div className="">
                     <span className='text-xl'>Smart Digital Solutions:</span>
