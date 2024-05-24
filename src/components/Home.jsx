@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect } from 'react'
 import Hero from './HomeHelpers/Hero'
 import Aos from 'aos'
+import laptopImg from '../assets/website.svg'
 
 const Home = () => {
     useEffect(() => {
@@ -13,7 +14,7 @@ const Home = () => {
                 <hr class="xl:w-2/3 md:w-2/4  border-t-4 border-indigo-500 rounded-lg shadow-lg" />
             </div>
             <div className="md:hidden">
-                <img src="src\assets\website.svg" alt="Laptop with lady" className='bottom-1' />
+                <img src={laptopImg} alt="Laptop with lady" className='bottom-1' />
             </div>
             <div className="md:flex md:w-full xl:w-2/3 md:justify-center p-10 w-fit md:p-3 sm:h-30 sm:p-2 xl:pl-[20rem]" >
 
