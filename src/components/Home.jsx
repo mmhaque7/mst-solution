@@ -1,5 +1,7 @@
 import React, { Fragment, useEffect } from 'react'
 import Hero from './HomeHelpers/Hero'
+import { Button, Link } from "@nextui-org/react";
+
 import Aos from 'aos'
 import laptopImg from '../assets/website.svg'
 
@@ -19,12 +21,14 @@ const Home = () => {
             <div className="md:flex md:w-full xl:w-2/3 md:justify-center p-10 w-fit md:p-3 sm:h-30 sm:p-2 xl:pl-[20rem]" >
 
                 <div className="md:w-[55rem] md:h-[10rem] md:flex items-center justify-center content-center bg-purple-100 border-b-2 border-indigo-500 border-r-2  ">
-                    <span className='text-xl md:text-2xl' data-aos="fade-right" data-aos-delay="300 ">Smart Digital Solutions:</span>
-                    <h2 className="text-3xl md:text-4xl" data-aos="fade-right" data-aos-delay="400">For The Real World</h2>
+                    <span className='text-xl md:text-2xl font-lato' data-aos="fade-up" data-aos-delay="300 ">Smart Digital Solutions:</span>
+                    <h2 className="text-3xl md:text-4xl font-lato" data-aos="fade-up" data-aos-delay="400">For The Real World</h2>
                 </div>
-                <div className='xl:pl-4 md:pt-0 md:w-fit pt-4 text-pretty font '>
+                <div className='xl:pl-4 md:pt-0 md:w-fit pt-4 text-pretty font-lato text-base lg:text-lg '>
                     <p>Step into the dynamic world of digital innovation, where creativity knows no bounds! From mesmerizing web design to groundbreaking marketing strategies, we're your gateway to online triumph. Let's ignite your digital journey!</p>
+                    <p>Learn more about our services <span><Button as={Link} href='/services' className='border-none bg-inherit'>click</Button></span></p>
                 </div>
+             
             </div>
 
         </Fragment>

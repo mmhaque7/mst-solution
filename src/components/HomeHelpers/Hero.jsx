@@ -21,7 +21,7 @@ function Hero() {
           className="object-none hidden md:block  md:w-full md:h-full opacity-80"
         />
         <div className=" absolute w-full  top-[10svh] h-full md:h-full flex flex-col flex-wrap ellipsis-p text-pretty items-start justify-start md:justify-center text-red-400">
-          <h1 className="text-xl sm:text-4xl pl-5 pb-5 font-bold font-lato text-pretty">
+          <h1 className="text-xl sm:text-4xl pl-5 pb-5 font-bold font-lato text-pretty ">
             <span data-aos="fade-up" data-aos-delay="750" >
               Digital Mastery <span className="md:no-underline underline decoration-indigo-500 ">Unleashed.</span>
             </span>
@@ -30,7 +30,7 @@ function Hero() {
             <span data-aos="fade-up" data-aos-delay="800">
               Embark on a journey of digital empowerment with us.
             </span>
-            <span data-aos="fade-up" data-aos-delay="850">
+            <span data-aos="fade-up" data-aos-delay="850" >
               Unlock the potential of your online presence today.
             </span>
           </p>
