@@ -30,8 +30,8 @@ const Home = () => {
                     <span><Button as={Link} href='/services' className='border-none bg-inherit pt-2 md:pt-4 md:text-xl md:pl-0 underline decoration-[#FD6C7E] hover:decoration-indigo-500 font-semibold'>Learn more about our services </Button></span>
                 </div>
             </div>
-            <div className="">
-                <h2><span>Digital Work That</span>
+            <div className="w-2/3 mt-[5rem]">
+                <h2 className='md:flex md:flex-col font-lato text-3xl md:pl-[10rem] pl-5'><span>Digital Work That &nbsp; </span>
                     <span> Truly Makes A Difference.</span>
                 </h2>
             </div>
