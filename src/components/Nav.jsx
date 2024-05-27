@@ -14,7 +14,7 @@ export default function Nav() {
     ];
 
     return (
-        <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen} className=' h-15  md:h-20 pt-0'>
+        <Navbar  onMenuOpenChange={setIsMenuOpen} className=' h-15  md:h-20 pt-0'>
             <NavbarContent className='mr-[15rem]'>
                 <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className='sm:hidden' />
                 <NavbarBrand className='flex justify-start'>
