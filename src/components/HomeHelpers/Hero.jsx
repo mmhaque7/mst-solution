@@ -18,6 +18,7 @@ function Hero() {
           autoPlay
           loop
           muted
+
           className="object-none hidden md:block  md:w-full md:h-full opacity-80"
         />
         <div className=" absolute w-full  top-[10svh] h-full md:h-full flex flex-col flex-wrap ellipsis-p text-pretty items-start justify-start md:justify-center text-red-400">
@@ -35,7 +36,7 @@ function Hero() {
             </span>
           </p>
           <div className="flex justify-center items-center pt-10 pl-5 " data-aos="fade-right" data-aos-delay="1000">
-            <Button as={Link} href="/contact" auto className="bg-red-500 text-white py-2 px-6 rounded shadow-lg transform transition-transform duration-300 hover:scale-105 active:scale-95">Get in Touch</Button>
+            <Button as={Link} href="/contact" className="bg-red-500 text-white py-2 px-6 rounded shadow-lg transform transition-transform duration-300 hover:scale-105 active:scale-95">Get in Touch</Button>
 
 
           </div>

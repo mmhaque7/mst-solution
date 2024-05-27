@@ -14,7 +14,11 @@ export default {
     extend: {
       fontFamily: {
         'lato': ['"Lato"',]
-      }
+      },
+      listStyleImage: {
+        checkmark: 'url("./src/assets/checkmark.png")'
+      },
+
     },
   },
   darkMode: "class",
