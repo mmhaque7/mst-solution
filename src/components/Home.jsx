@@ -36,7 +36,7 @@ const Home = () => {
           </h2>
         </div>
         <div className="xl:pl-4 md:pt-0 md:w-fit pt-4 text-pretty font-lato text-base lg:text-lg ">
-          <p>
+          <p className="line-clamp-3 md:w-2/3">
             Step into the dynamic world of digital innovation, where creativity
             knows no bounds! From mesmerizing web design to groundbreaking
             marketing strategies, we're your gateway to online triumph. Let's
@@ -60,7 +60,7 @@ const Home = () => {
             Truly Makes A Difference.
           </span>
         </h2>
-        <p className="font-lato md:pl-[10rem] md:pt-5 md:pb-4 pl-5 w-2/4 ">Let's build a strong and successful partnership to transform our dreams into reality. By working together, we can achieve great things and bring your vision to life. </p>
+        <p className="font-lato md:pl-[10rem] md:pt-5 md:pb-4 pl-5 w-2/4 line-clamp-3 ">Let's build a strong and successful partnership to transform our dreams into reality. By working together, we can achieve great things and bring your vision to life. </p>
         <ul className="list-image-checkmark md:pl-[11rem] columns-2 ">
           <li>Increase Lead and Sales</li>
           <li>Drive eCommmerce growth</li>
