@@ -16,7 +16,7 @@ export default {
         'lato': ['"Lato"',]
       },
       listStyleImage: {
-        checkmark: 'url("./src/assets/checkmark.png")'
+        checkmark: 'url("./assets/checkmark.png")'
       },
 
     },
