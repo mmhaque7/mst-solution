@@ -61,8 +61,13 @@ const Home = () => {
           </span>
         </h2>
         <p className="font-lato md:pl-[10rem] md:pt-5 md:pb-4 pl-5 w-2/4 ">Let's build a strong and successful partnership to transform our dreams into reality. By working together, we can achieve great things and bring your vision to life. </p>
-        <ul className="list-image-checkmark md:pl-[11rem]">
-          <li>HelloS</li>
+        <ul className="list-image-checkmark md:pl-[11rem] columns-2 ">
+          <li>Increase Lead and Sales</li>
+          <li>Drive eCommmerce growth</li>
+          <li>Optimize your website</li>
+          <li>Maximize engagement</li>
+          <li>Boost social media presence</li>
+          <li>Increase brand awareness</li>
         </ul>
       </div>
     </Fragment >
