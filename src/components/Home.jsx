@@ -10,7 +10,7 @@ const Home = () => {
     Aos.init();
   }, []);
   return (
-    <Fragment >
+    <Fragment>
       <Hero />
       <div className="my-8 flex justify-center">
         <hr className="xl:w-2/3 md:w-2/4  border-t-4 border-indigo-500 rounded-lg shadow-lg" />
@@ -53,24 +53,33 @@ const Home = () => {
           </span>
         </div>
       </div>
-      <div className="w-2/3 mt-[4rem] md:flex md:flex-col" data-aos="fade-up" data-aos-offset="50">
+      <div
+        className="w-3/4 mt-[4rem] md:flex md:flex-col"
+        data-aos="fade-up"
+        data-aos-offset="50"
+      >
         <h2 className="md:flex md:flex-col font-lato text-3xl md:pl-[10rem] pl-5 mb-3 md:mb-2">
-          <span className="" >Digital Work That</span>
+          <span className="">Digital Work That</span>
           <span className="text-4xl text-[#FD6C7E]">
             Truly Makes A Difference.
           </span>
         </h2>
-        <p className="font-lato md:pl-[10rem] md:pt-5 md:pb-4 pl-5 md:w-2/4 w-full line-clamp-6 md:line-clamp-3 text-pretty pb-3">Let's build a strong and successful partnership to transform our dreams into reality. By working together, we can achieve great things and bring your vision to life. </p>
+        <p className="font-lato md:pl-[10rem] md:pt-5 md:pb-4 pl-5 md:w-2/4 w-full line-clamp-6 md:line-clamp-3 text-pretty pb-3">
+          Let's build a strong and successful partnership to transform our
+          dreams into reality. By working together, we can achieve great things
+          and bring your vision to life.{" "}
+        </p>
         <ul className="list-image-checkmark md:pl-[11rem] md:columns-2 columns-1 pl-11 mb-10">
           <li>Increase Lead and Sales</li>
-          <li>Drive eCommmerce growth</li>
+          <li>Drive eCommerce growth</li>
           <li>Optimize your website</li>
           <li>Maximize engagement</li>
           <li>Boost social media presence</li>
           <li>Increase brand awareness</li>
         </ul>
       </div>
-    </Fragment >
+      <div className="">modal goes here</div>
+    </Fragment>
   );
 };
 export default Home;
