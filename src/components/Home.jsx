@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 import Hero from "./HomeHelpers/Hero";
+import HomeModal from "./HomeHelpers/homeModal";
 import { Button, Link } from "@nextui-org/react";
 
 import Aos from "aos";
@@ -78,7 +79,7 @@ const Home = () => {
           <li>Increase brand awareness</li>
         </ul>
       </div>
-      <div className="">modal goes here</div>
+      <div className=""><HomeModal/></div>
     </Fragment>
   );
 };
