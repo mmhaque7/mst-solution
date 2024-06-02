@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function HomeModal() {
   return (
-    <motion.div className="">
+    <motion.div className="m-0 p-0 box-border flex">
       <motion.h2>hello</motion.h2>
       <motion.div>
         <p>
@@ -14,6 +14,38 @@ function HomeModal() {
         </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aliquam.</p>
       </motion.div>
+
+      <motion.h2>hello</motion.h2>
+      <motion.div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          officia illum ad ipsum voluptate molestias ratione quas, nulla
+          voluptatum modi?Z
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aliquam.</p>
+      </motion.div>
+
+      <motion.h2>hello</motion.h2>
+      <motion.div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          officia illum ad ipsum voluptate molestias ratione quas, nulla
+          voluptatum modi?Z
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aliquam.</p>
+      </motion.div>
+
+      <motion.h2>hello</motion.h2>
+      <motion.div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          officia illum ad ipsum voluptate molestias ratione quas, nulla
+          voluptatum modi?Z
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aliquam.</p>
+      
+      </motion.div>
+
     </motion.div>
   );
 }
