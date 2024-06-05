@@ -1,12 +1,21 @@
 import React, { Fragment, useEffect } from "react";
 import Hero from "./HomeHelpers/Hero";
-import HomeModal from "./HomeHelpers/homeModal";
 import { Button, Link } from "@nextui-org/react";
-
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  useDisclosure,
+} from "@nextui-org/react";
 import Aos from "aos";
 import laptopImg from "../assets/website.svg";
+import { items } from "./HomeHelpers/data";
 
 const Home = () => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   useEffect(() => {
     Aos.init();
   }, []);
@@ -79,7 +88,17 @@ const Home = () => {
           <li>Increase brand awareness</li>
         </ul>
       </div>
-      <div className=""><HomeModal/></div>
+      {/*modals*/}
+      {items.map(item=>{
+        {/*console.log(item);*/}
+        <div className="pl-[12rem]" key={item.id}>
+          <Button onPress={onOpen}>{item.title}</Button>
+        </div>
+      })}
+    
+    <Button onPress={onOpen}>Opensa Modal</Button>
+
+
     </Fragment>
   );
 };
